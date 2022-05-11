@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>просто наведись мышкой</title>
+  <link rel="stylesheet" href="styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <div class="title">Приветствую вас на моем сайте!</div>
+    <div class="container">Наведись мышкой</div>
+ <script>
+     let title = document.querySelector('.title')
+     let cont = document.querySelector('.container')
+     function on() {
+         cont.style.opacity = 0
+         title.style.opacity = 0
+         document.body.style.backgroundImage = 'url(hackputin.jpg)'
+     }
+     function off() {
+         cont.style.opacity = 1
+         title.style.opacity = 1
+         document.body.style.backgroundImage = 'none'
+     }
+     cont.addEventListener('mouseover', on)
+     cont.addEventListener('mouseout', off)
+ </script>
+ </body>
+</html>

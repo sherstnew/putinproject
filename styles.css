@@ -1,0 +1,47 @@
+body{
+  width: 98vw;
+  height: 98vh;
+  background-color: #edefec;
+  background-size: 98vw, 98vh;
+  transition: 0.5s;
+  font-family: 'Montserrat', sans-serif;
+  background-image: none;
+}
+
+.title{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 200px;
+  font-size: 40px;
+  transition: 0.3s;
+  opacity: 1;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  font-size: 25px;
+  background-color: white;
+  width: 400px;
+  height: 300px;
+  box-shadow: 10px 10px 0px 3px #e3e3e1;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container:hover{
+  opacity: 0;
+  transition: 0.5s;
+}
+.container:hover body {
+  background-image: url('/hackputin.jpg');
+}
+.container:hover .title{
+  opacity: 0;
+  transition: 0.5s;
+}
